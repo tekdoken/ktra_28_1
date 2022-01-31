@@ -1,15 +1,15 @@
-<!--<form [formGroup]="editForm" (ngSubmit)="updateBook()" >-->
-<!--  <div class="mb-3" style="width: 500px">-->
-<!--    <label class="form-label">Title</label>-->
-<!--    <input type="text" formControlName="title" [(ngModel)]="book.title">-->
-<!--  </div>-->
-<!--  <div class="mb-3" style="width: 500px">-->
-<!--    <label class="form-label">Author</label>-->
-<!--    <input type="text"  formControlName="author" [(ngModel)]="book.author">-->
-<!--  </div>-->
-<!--  <div class="mb-3" style="width: 500px">-->
-<!--    <label class="form-label">description</label>-->
-<!--    <textarea type="text"  formControlName="description" [(ngModel)]="book.description"></textarea>-->
-<!--  </div>-->
-<!--  <button type="submit" class="btn btn-primary">Submit</button>-->
-<!--</form>-->
+<form [formGroup]="editForm" (ngSubmit)="updateBook()" >
+  <div  >
+    <label>Title</label><br>
+    <input type="text" formControlName="title" [(ngModel)]="book.title" style="width: 80%">
+  </div>
+  <div class="mb-3" >
+    <label class="form-label">Author</label><br>
+    <input type="text"  formControlName="author" [(ngModel)]="book.author" style="width: 80%">
+  </div>
+  <div class="mb-3" >
+    <label class="form-label">description</label><br>
+    <textarea type="text"  formControlName="description" [(ngModel)]="book.description" style="width: 80%"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

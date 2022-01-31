@@ -28,4 +28,7 @@ export class BookDetailComponent implements OnInit {
       this.router.navigate([''])
     })
   }
+  edit(id:any){
+    this.router.navigate(['edit/'+`${id}`])
+  }
 }

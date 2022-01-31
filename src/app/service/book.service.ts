@@ -22,11 +22,16 @@ export class BookService {
     return this.http.post<Book>(A, b)
   }
 
-  getOne(id:any): Observable<Book> {
-    return this.http.get<Book>(A+`${id}`)
+  getOne(id: any): Observable<Book> {
+    return this.http.get<Book>(A + `${id}`)
   }
-  delete(id:any){
-    return this.http.delete<Book>(A+`${id}`)
+
+  delete(id: any) {
+    return this.http.delete<Book>(A + `${id}`)
+  }
+
+  update(id: any,b:Book): Observable<Book> {
+    return this.http.put<Book>(A + `${id}`,b)
   }
 }
 

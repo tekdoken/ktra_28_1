@@ -1,13 +1,13 @@
 <form [formGroup]="createForm" (ngSubmit)="saveBook()" >
-  <div class="mb-3" style="width: 500px">
+  <div class="mb-3" style="width: 900px">
     <label class="form-label">Title</label>
     <input type="text" formControlName="title" [(ngModel)]="book.title">
   </div>
-  <div class="mb-3" style="width: 500px">
+  <div class="mb-3" style="width: 900px">
     <label class="form-label">Author</label>
     <input type="text"  formControlName="author" >
   </div>
-  <div class="mb-3" style="width: 500px">
+  <div class="mb-3" style="width: 900px">
     <label class="form-label">description</label>
     <textarea type="text"  formControlName="description" ></textarea>
   </div>
