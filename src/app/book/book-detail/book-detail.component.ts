@@ -24,9 +24,11 @@ export class BookDetailComponent implements OnInit {
   }
 
   remote(id: any) {
-    this.service.delete(id).subscribe(r=>{
-      this.router.navigate([''])
-    })
+    if(confirm("Are you sure to delete this book???")) {
+      this.service.delete(id).subscribe(r=>{
+        this.router.navigate([''])
+      })
+    }
   }
   edit(id:any){
     this.router.navigate(['edit/'+`${id}`])
