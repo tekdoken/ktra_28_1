@@ -1,0 +1,14 @@
+<!--<button (click)="create()"></button>-->
+<table class="table table-dark table-striped">
+  <tr>
+    <td>#</td>
+    <td>title</td>
+    <td>author</td>
+    <td>action</td>
+  </tr>
+  <tr *ngFor="let b of books;let i=index">
+    <td>{{i+1}}</td>
+    <td>{{b.title}}</td>
+    <td>{{b.author}}</td>
+  </tr>
+</table>
